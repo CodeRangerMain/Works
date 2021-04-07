@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+       <div class="sign_up">
+          
+           <form class="sign-up-form" name="sign-up-form">
+               <h class="title-form">Зарегистрироваться</h>
+               <input class="login" type="login" name="login" id="sign-up-login" required placeholder="Ваш Login">
+               <input class="password" type="password" name="password" id="sign-up-password" required placeholder="Ваш Password">
+               <input class="sign-up-btn" type="submit" name="submit-btn" id="sign-up-submit" value="Создать">
+               
+           </form>
+       </div>
+       <div class="sign_in">
+           
+           <form class="sign-in-form" name="sign-in-form">
+              <h class="title-form">Войти</h>
+               <input class="login" type="login" name="login" id="sign-in-login" required placeholder="Ваше Login">
+               <input class="password" type="password" name="password" id="sign-in-password" required placeholder="Ваш Password">
+               <input class="sign-in-btn" type="submit" name="submit-btn" id="sign-in-submit" value="Войти">
+               
+           </form>
+       </div>
+       <div id="notification" class="notification hidden"><p>Пользователь создан</p></div>
+   </div>
+    <script src="script.js"></script>
+</body>
+</html>
