@@ -1,0 +1,310 @@
+body {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    font-family: "Ubuntu Condensed", sans-serif;
+}
+.calculator {
+    max-width: 1100px;
+    height: 625px;
+    margin: 20px auto;
+    border: 3px solid black;
+    border-radius: 8px;
+    display: flex;
+}
+.calculator-main {
+    width: 630px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.calculator-main-menu {
+    display: flex;
+    margin-bottom: 20px;
+}
+.main-menu-element {
+    transition: 0.2s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 33.3333%;
+    padding: 20px 0;
+    background-color: #e9e9e9;
+    transition: 0.3s;
+    border-right: 1px solid #dcdcdc;
+}
+.main-menu-element:nth-child(3) {
+    border-right: none;
+}
+.main-menu-element:hover {
+    background-color: #fff;
+    transition: 0.3s;
+}
+.main-menu-element-active {
+    background-color: #fff;
+}
+.hiden {
+    visibility: hidden;
+}
+.main-menu-element > p {
+    margin: 0 0 0 0;
+    margin-top: 19px;
+    font-size: 22px;
+}
+.main-menu-element > img {
+    width: 45px;
+    height: 55px;
+}
+.drop-list {
+    transition: 0.2s;
+    background-color: #e0e0e0;
+    position: absolute;
+    top: -43px;
+    right: 2px;
+    width: 404px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
+}
+.drop-list::before {
+    border: 20px solid transparent;
+    border-bottom: 20px solid #e0e0e0;
+    content: "";
+    position: absolute;
+    top: -36px;
+    right: 81px;
+    z-index: 4;
+}
+
+.slider-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto 0;
+}
+.slider-container p {
+    margin: 0 0 0 0;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.calculator-slider {
+    background-color: black;
+    border-radius: 50%;
+    width: 238px;
+    height: 238px;
+}
+.calculator-advertising {
+    width: 98%;
+    height: 105px;
+    margin: 0px 6px;
+    margin-bottom: 5px;
+    border-radius: 9px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.calculator-advertising > img {
+    width: 118px;
+    height: 158px;
+    position: relative;
+    bottom: 26px;
+    left: 5px;
+}
+.advertising-title {
+    font-size: 44px;
+    margin-left: 25px;
+    margin-right: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.advertising-text {
+    color: #fff;
+    font-size: 22px;
+}
+.colored-text {
+    color: #eb7919;
+}
+.colored-text b {
+    font-size: 25px;
+}
+
+.calcuclator-sidebar {
+    background: url(/img/background.png) no-repeat #eb7919;
+    background-size: cover;
+
+    width: 470px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.calculator-sidebar-title {
+    align-items: center;
+    display: flex;
+    height: 65px;
+    margin-left: 32px;
+}
+.calculator-sidebar-title > img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+.sidebar-final-price {
+    font-size: 25px;
+    font-weight: bold;
+}
+#price {
+    color: #fff;
+    font-size: 27px;
+    margin-left: 10px;
+}
+.calculator-sidebar-menu {
+    position: relative;
+}
+.sidebar-menu-element {
+    cursor: pointer;
+    display: flex;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    justify-content: space-between;
+    padding: 14px 35px;
+    align-items: center;
+    transition: 0.2s;
+}
+.sidebar-menu-element:hover {
+    background: black;
+    overflow: visible;
+    position: relative;
+    width: 422px;
+    border-radius: 8px;
+    left: -20px;
+    transition: 0.3s;
+}
+.active {
+    background: black;
+    overflow: visible;
+    position: relative;
+    width: 422px;
+    border-radius: 8px;
+    left: -20px;
+    transition: 0.2s;
+}
+.menu-element-title {
+    display: flex;
+}
+.sidebar-menu-element img {
+    width: 20px;
+    height: 20px;
+    margin-right: 17px;
+}
+.calculator-switcher {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.calculator-switcher-title {
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    margin-bottom: 17px;
+}
+
+.calculator-switcher-title img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+.sidebar-switcher {
+    display: flex;
+    margin-bottom: 20px;
+}
+.sidebar-switcher-button {
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    color: black;
+    transition: 0.2s;
+}
+.sidebar-switcher-button:nth-child(1) {
+    margin-right: -15px;
+}
+.active-switcher {
+    background-color: black;
+    color: #fff;
+    z-index: 3;
+    transition: 0.2s;
+}
+.calculator-sidebar-submit {
+    padding: 21px 0;
+    width: 368px;
+    border: 3px solid #fff;
+    text-transform: uppercase;
+    background-color: transparent;
+    font: inherit;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.calculator-sidebar-submit:hover {
+    background: black;
+    color: #fff;
+    border: 3px solid #fff;
+    transition: 0.3s;
+}
+.calculator-submit {
+    margin-bottom: 16px;
+}
+.calculator-submit p {
+    font-size: 19px;
+    margin: 0 0 0 0;
+    margin-left: 43px;
+    margin-top: 27px;
+}
+/* slider */
+#slider .rs-handle {
+    background-color: #eb7d24;
+    border: 6px solid black;
+}
+#slider .rs-range-color {
+    background-color: #ff8d00;
+}
+
+#slider .rs-border {
+    border: none;
+}
+#slider .rs-tooltip {
+    font-size: 60px;
+    font-weight: bold;
+    left: 125px;
+    top: 122px;
+}
+#slider .rs-tooltip::after {
+    content: "м²";
+    font-size: 20px;
+}
+#slider .rs-input {
+    font-size: 50px;
+    font-weight: bold;
+}
+#slider .rs-hover {
+    font-size: 60px;
+    font-weight: bold;
+    left: 100px;
+    top: 122px;
+    width: 220px;
+    height: 80px;
+}
