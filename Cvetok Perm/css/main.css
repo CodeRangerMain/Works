@@ -1,0 +1,232 @@
+.photo {
+    margin-top: 45px;
+    padding-bottom: 45px;
+    border-bottom: 2px solid black;
+}
+.photo-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.photo-logo {
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    margin-left: -54px;
+}
+.photo-logo > img {
+    width: 83px;
+    height: 117px;
+}
+.photo-logo > h1 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #cd3333;
+    margin-left: 0px;
+}
+.photo-logo > h1 > span {
+    color: #645453;
+}
+.photo-logo > h1::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 3px;
+    background-color: black;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.gallery {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border: 4px solid #fffa77;
+    background: black;
+    border-radius: 8px;
+}
+.background {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px;
+    background-color: #645453;
+    border-radius: 20px;
+}
+.main-photo {
+    width: 500px;
+    height: 300px;
+}
+.photo-container {
+    border-top: 3px solid #fffa77;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.photo-container > img {
+    width: 123px;
+    border: 1px solid #fffa77;
+    height: 62px;
+    cursor: pointer;
+    -webkit-filter: grayscale(0) blur(0);
+    filter: grayscale(0) blur(0);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+}
+.photo-container > img:hover {
+    -webkit-filter: grayscale(100%) blur(3px);
+    filter: grayscale(100%) blur(3px);
+}
+
+.gallery-container {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+.gallery-text {
+    margin-left: 50px;
+    width: 500px;
+}
+.gallery-text > h2 {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+.gallery-text > p {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    font-size: 22px;
+    font-weight: 300;
+}
+.google-map {
+    margin-top: 45px;
+    padding-bottom: 45px;
+}
+.google-map-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.google-map-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.google-map-title > img {
+    height: 120px;
+}
+.google-map-title > h2 {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    text-transform: uppercase;
+    margin-top: 14px;
+    font-size: 30px;
+}
+.google-map-title > h2::after {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 120px;
+    height: 3px;
+    background-color: black;
+    margin-left: 65px;
+    margin-top: 10px;
+}
+.map-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.map {
+    width: 500px;
+    height: 300px;
+    border: 5px solid #fffa77;
+    border-radius: 8px;
+}
+.map-text {
+    align-self: flex-start;
+    width: 500px;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+.map-text > p {
+    margin: 0 0 0 0;
+    margin-top: 15px;
+    color: #ffd9c3;
+}
+@media screen and (max-width: 1024px) {
+    .gallery-container {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .gallery-text {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .gallery-text > p {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 550px) {
+    .background {
+        padding: 10px 10px;
+    }
+    .photo-logo > img {
+        width: 69px;
+        height: 95px;
+    }
+    .photo-logo > h1 {
+        font-size: 23px;
+    }
+    .photo-logo > h1::after {
+        margin-left: 26px;
+    }
+    .gallery {
+        max-width: 300px;
+    }
+    .main-photo {
+        max-width: 300px;
+        height: 180px;
+    }
+    .photo-container {
+        max-width: 300px;
+    }
+    .photo-container > img {
+        max-width: 73px;
+        max-height: 40px;
+    }
+    .map {
+        width: 300px;
+        height: 200px;
+    }
+    .gallery-text {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: auto;
+    }
+    .gallery-text > h2 {
+        font-size: 23px;
+    }
+    .gallery-text > p {
+        font-size: 16px;
+    }
+    .map-text {
+        font-size: 16px;
+        width: auto;
+    }
+    .google-map-title > img {
+        height: 70px;
+    }
+    .google-map-title > h2 {
+        font-size: 23px;
+    }
+    .google-map-title > h2::after {
+        margin-left: 35px;
+    }
+}
