@@ -1,3 +1,1 @@
-# portfolio
-# portfolio
-# portfolio
+Проект выполнялся в рамках кура html academy
