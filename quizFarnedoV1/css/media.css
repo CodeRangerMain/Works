@@ -1,0 +1,23 @@
+
+	.our-works .title span {
+		padding: 0;
+		font-size: 22px;
+	}
+
+	.our-works .title span:before,
+	.our-works .title span:after {
+		content: none;
+	}
+
+	.our-works .slider-container {
+		padding: 0 35px;
+	}
+
+	.our-works .slick-prev {
+		left: -45px;
+	}
+
+	.our-works .slick-next {
+		right: -45px;
+	}
+}
